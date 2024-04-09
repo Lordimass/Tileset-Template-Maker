@@ -1,9 +1,10 @@
 import PIL.Image as Image
 import PIL.ImageDraw as ImageDraw
+import os
 
 TILE_WIDTH    = 128
-TILE_HEIGHT   = 90
-TILESET_SIZE  = [5, 9] 
+TILE_HEIGHT   = TILE_WIDTH
+TILESET_SIZE  = [3, 1] 
 BUFFER        = 5
 BUFFER_COLOUR = (0,0,0)
 
@@ -38,8 +39,5 @@ for hLine in range(TILESET_SIZE[1]+1):
                   width = BUFFER)
     startPos = (startPos[0], startPos[1] + TILE_WIDTH + BUFFER)
     
-
-
-
-img.show()
 img.save("output.png")
+os.startfile("output.png")

@@ -4,7 +4,7 @@ import os
 
 TILE_WIDTH    = 128
 TILE_HEIGHT   = TILE_WIDTH
-TILESET_SIZE  = [3, 1] 
+TILESET_SIZE  = [5, 1] 
 BUFFER        = 5
 BUFFER_COLOUR = (0,0,0)
 
@@ -16,9 +16,9 @@ imageSize = [
 print(f"Creating image of size {imageSize}")
 
 img = Image.new(
-    mode="RGB",
+    mode="RGBA",
     size=imageSize,
-    color=(255,255,255)
+    color=(0,0,0,0)
     )
 
 
